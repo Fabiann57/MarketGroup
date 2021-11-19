@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+
+</head>
+<body>
+    <div class="login-container">
+          <div class="login-info-container">
+            <img src="/assets/images/logo.png" class="logo">
+            <h1 class="title">Registrate con</h1>
+            <div class="social-login">
+                <div class="social-login-element">
+                    <img src="/assets/images/google.svg" alt="google-image">
+                    <span onclick="window.location='https://www.google.com/'">Google</span>
+                </div>
+                <div class="social-login-element">
+                    <img src="/assets/images/facebook.svg" alt="facebook-image">
+                    <span onclick="window.location='https://www.facebook.com/'">Facebook</span>
+                </div>
+            </div>
+           
+            <p>O</p>
+           
+            <form class="inputs-container" id="form">
+                <input id="mail" class="input" type="text" placeholder="Correo">
+                <input id="pass" class="input" type="password" placeholder="Contraseña">
+                <input id="pass2" class="input" type="password" placeholder="Confirmar contraseña">
+                <p id="car">Debe contener minimo 8 caracteres</p>
+    
+                <button type="submit" id= "btn" class="btn" onclick="registro(event)">Registrate</button>
+                <p>Ya tienes cuenta? <a href="index.html" class="span" >Inicia sesion</a></p>
+            </form>
+          </div>
+            <img class="image-container" src="/assets/images/login.svg" alt="">
+           
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
